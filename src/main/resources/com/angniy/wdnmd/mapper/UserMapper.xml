@@ -10,4 +10,7 @@
     <select id="getUserById" resultType="User">
         select <include refid="userCol"></include> from users where id = #{id}
     </select>
+    <select id="getAllUsers" resultType="User">
+        select <include refid="userCol"></include> from users
+    </select>
 </mapper>
